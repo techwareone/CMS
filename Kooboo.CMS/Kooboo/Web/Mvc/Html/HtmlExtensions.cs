@@ -37,7 +37,7 @@ namespace Kooboo.Web.Mvc.Html
         public static IHtmlString Script(this HtmlHelper html, string scriptUrl)
         {
             string url = ResolveUrl(html, scriptUrl);
-            return new HtmlString(string.Format("<script type=\"text/javascript\" src=\"{0}\" ></script>\n", url));
+            return new HtmlString(string.Format("<script type=\"text/javascript\" src=\"{0}\"></script>\n", url));
         }
         /// <summary>
         /// Renders a link tag referencing the stylesheet.  
